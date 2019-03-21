@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LquickLib</string>
+    <string name="error_network_request_timeout">123</string>
+    <string name="error_network_network_error">64</string>
+    <string name="error_network_connection_failure">69</string>
+    <string name="error_sys_error">36</string>
+    <string name="error_parsing_error">36</string>
+    <string name="error_network_get_image_failure">98</string>
+</resources>
