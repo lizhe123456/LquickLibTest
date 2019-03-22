@@ -1,13 +1,15 @@
 package com.empty.lquicklibtest;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.empty.lquicklib.themvp.presenter.ActivityPresenter;
+
+public class MainActivity extends ActivityPresenter<MainDelegate> {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected Class<MainDelegate> getDelegateClass() {
+        return MainDelegate.class;
     }
+
+
+
 }

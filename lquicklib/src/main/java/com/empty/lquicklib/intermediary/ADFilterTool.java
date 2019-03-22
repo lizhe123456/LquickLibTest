@@ -8,7 +8,7 @@ import com.empty.lquicklib.R;
 
 /**
  * Created by lizhe on 2019/3/13.
- *
+ * 屏蔽广告
  */
 
 public class ADFilterTool {

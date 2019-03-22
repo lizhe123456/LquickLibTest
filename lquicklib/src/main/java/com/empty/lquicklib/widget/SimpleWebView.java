@@ -13,7 +13,7 @@ import com.tencent.smtt.sdk.WebView;
 
 /**
  * Created by lizhe on 2019/3/13.
- *
+ * 使用腾讯tbs
  */
 
 public class SimpleWebView extends WebView {
@@ -58,7 +58,7 @@ public class SimpleWebView extends WebView {
         this.setWebViewClient(new SimpleWebViewClient());
 
         this.setWebChromeClient(new WebChromeClient(){
-            //这里可以设置进度条。但我是用另外一种
+            //这里可以设置进度条。
             @Override
             public void onProgressChanged(WebView webView, int i) {
                 super.onProgressChanged(webView, i);
