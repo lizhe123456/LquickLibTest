@@ -1,20 +1,19 @@
 package com.empty.lquicklibtest;
 
-import me.goldze.mvvmhabit.base.BaseApplication;
-import me.goldze.mvvmhabit.crash.CaocConfig;
-import me.goldze.mvvmhabit.utils.KLog;
+import android.app.Application;
+
+import com.empty.lquicklib.crash.CaocConfig;
 
 /**
  * Created by lizhe on 2019/4/2.
  *
  */
 
-public class App extends BaseApplication {
+public class App extends Application {
 
     @Override
     public void onCreate() {
         super.onCreate();
-        KLog.init(BuildConfig.DEBUG);
         initCrash();
     }
 
@@ -31,5 +30,6 @@ public class App extends BaseApplication {
 //                .errorActivity(YourCustomErrorActivity.class) //崩溃后的错误activity
 //                .eventListener(new YourCustomEventListener()) //崩溃后的错误监听
                 .apply();
+
     }
 }

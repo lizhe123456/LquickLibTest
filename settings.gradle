@@ -1,1 +1,1 @@
-include ':app', ':lquicklib', ':apppay', ':thirdpartylogin', ':mvvmhabit'
+include ':app', ':lquicklib', ':apppay', ':thirdpartylogin'

@@ -19,6 +19,10 @@ android {
         }
     }
 
+    dataBinding {
+        enabled = true
+    }
+
 
     compileOptions {
         targetCompatibility 1.8
@@ -42,6 +46,17 @@ dependencies {
     api rootProject.ext.dependencies["annotations"]
     //屏幕适配
     implementation rootProject.ext.dependencies["autosize"]
+
+
+    implementation rootProject.ext.dependencies["rxlifecycle2"]
+    implementation rootProject.ext.dependencies["rxlifecycle2-components"]
+    implementation rootProject.ext.dependencies["rxbinding"]
+    implementation rootProject.ext.dependencies["rxbinding-recyclerview-v7"]
+    implementation rootProject.ext.dependencies["bindingcollectionadapter"]
+    implementation rootProject.ext.dependencies["bindingcollectionadapter-recyclerview"]
+    implementation rootProject.ext.dependencies["lifecycle-extensions"]
+    implementation rootProject.ext.dependencies["lifecycle-compiler"]
+
     //test
     testImplementation rootProject.ext.dependencies["junit"]
     debugImplementation rootProject.ext.dependencies["canary-debug"]
