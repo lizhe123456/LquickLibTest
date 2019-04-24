@@ -64,7 +64,7 @@ ext {
             "rxbinding-recyclerview-v7": "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:1.0.1",
             "rxpermissions"            : "com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar",
             "rxerrorhandler"           : "me.jessyan:rxerrorhandler:1.0.1",
-
+            "rxbinding"                : "com.jakewharton.rxbinding2:rxbinding:2.1.1",
             //rx2
             "rxandroid2"               : "io.reactivex.rxjava2:rxandroid:2.1.0",
             "rxjava2"                  : "io.reactivex.rxjava2:rxjava:2.2.4",
@@ -107,6 +107,21 @@ ext {
             "canary-release"           : "com.squareup.leakcanary:leakcanary-android-no-op:${version["canarySdkVersion"]}",
             "umeng-analytics"          : "com.umeng.analytics:analytics:6.0.1",
 
-            "utilcode"          : "com.blankj:utilcode:1.13.14"
+            "utilcode"          : "com.blankj:utilcode:1.13.14",
+
+            //Google AAC
+            "lifecycle-extensions"                 : "android.arch.lifecycle:extensions:1.1.1",
+            "lifecycle-compiler"                 : "android.arch.lifecycle:compiler:1.1.1",
+
+            //recyclerview的databinding套装
+            "bindingcollectionadapter"             : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:2.2.0",
+            "bindingcollectionadapter-recyclerview": "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:2.2.0",
+
+            //material-dialogs
+            "material-dialogs-core"                : "com.afollestad.material-dialogs:core:0.9.4.5",
+            "material-dialogs-commons"             : "com.afollestad.material-dialogs:commons:0.9.4.5",
+
+
+
     ]
 }

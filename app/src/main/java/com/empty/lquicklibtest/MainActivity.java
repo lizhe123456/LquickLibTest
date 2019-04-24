@@ -1,15 +1,24 @@
 package com.empty.lquicklibtest;
 
+import android.os.Bundle;
 
-import com.empty.lquicklib.themvp.presenter.ActivityPresenter;
+import com.empty.lquicklibtest.viewmodel.MainViewModel;
 
-public class MainActivity extends ActivityPresenter<MainDelegate> {
+import me.goldze.mvvmhabit.base.BaseActivity;
 
+/**
+ * Created by lizhe on 2019/4/2.
+ *
+ */
+
+public class MainActivity extends BaseActivity<ActivityLoginBinding,MainViewModel>{
     @Override
-    protected Class<MainDelegate> getDelegateClass() {
-        return MainDelegate.class;
+    public int initContentView(Bundle savedInstanceState) {
+        return R.layout.activity_test;
     }
 
-
-
+    @Override
+    public int initVariableId() {
+        return BRBR.viewModel;
+    }
 }

@@ -1,4 +1,4 @@
-package com.empty.lquicklib.mvp.presenter;
+package com.empty.lquicklib.model;
 
 import android.app.Activity;
 import android.arch.lifecycle.LifecycleObserver;
