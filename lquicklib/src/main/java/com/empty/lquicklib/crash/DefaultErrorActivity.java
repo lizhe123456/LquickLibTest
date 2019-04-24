@@ -33,7 +33,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import me.goldze.mvvmhabit.R;
+import com.empty.lquicklib.R;
 
 
 public final class DefaultErrorActivity extends AppCompatActivity {

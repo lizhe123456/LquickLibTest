@@ -10,6 +10,12 @@ android {
         versionCode rootProject.ext.android["versionCode"]
         versionName rootProject.ext.android["versionName"]
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
     }
 
     buildTypes {
@@ -47,15 +53,27 @@ dependencies {
     //屏幕适配
     implementation rootProject.ext.dependencies["autosize"]
 
+    api(rootProject.ext.dependencies["rxlifecycle2"]) {
+        exclude group: 'com.android.support'
+    }
+    api(rootProject.ext.dependencies["rxlifecycle2-components"]) {
+        exclude group: 'com.android.support'
+    }
 
-    implementation rootProject.ext.dependencies["rxlifecycle2"]
-    implementation rootProject.ext.dependencies["rxlifecycle2-components"]
-    implementation rootProject.ext.dependencies["rxbinding"]
-    implementation rootProject.ext.dependencies["rxbinding-recyclerview-v7"]
-    implementation rootProject.ext.dependencies["bindingcollectionadapter"]
-    implementation rootProject.ext.dependencies["bindingcollectionadapter-recyclerview"]
-    implementation rootProject.ext.dependencies["lifecycle-extensions"]
-    implementation rootProject.ext.dependencies["lifecycle-compiler"]
+    api (rootProject.ext.dependencies["bindingcollectionadapter"]){
+        exclude group: 'com.android.support'
+    }
+    api (rootProject.ext.dependencies["bindingcollectionadapter-recyclerview"]){
+        exclude group: 'com.android.support'
+    }
+
+    //rxbinding
+    api(rootProject.ext.dependencies["rxbinding"]) {
+        exclude group: 'com.android.support'
+    }
+
+    api rootProject.ext.dependencies["lifecycle-extensions"]
+    annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
 
     //test
     testImplementation rootProject.ext.dependencies["junit"]

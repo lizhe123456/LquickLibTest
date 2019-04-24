@@ -5,7 +5,6 @@ import android.os.Bundle;
 import com.empty.lquicklib.base.BaseActivity;
 import com.empty.lquicklibtest.databinding.ActivityTestBinding;
 import com.empty.lquicklibtest.viewmodel.MainViewModel;
-import com.empty.lquicklibtest.BR;
 
 
 /**
@@ -20,7 +19,6 @@ public class MainActivity extends BaseActivity<ActivityTestBinding,MainViewModel
     protected int initVariableId() {
         return BR.viewModel;
     }
-
     @Override
     public int initContentView(Bundle savedInstanceState) {
         return R.layout.activity_test;

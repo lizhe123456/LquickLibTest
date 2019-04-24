@@ -10,6 +10,7 @@ import android.support.annotation.Nullable;
 import com.empty.lquicklib.mvvm.BaseViewModel;
 import com.empty.lquicklib.widget.LoadingDialog;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
+
 import android.databinding.ViewDataBinding;
 import android.support.v4.app.FragmentActivity;
 import java.lang.reflect.ParameterizedType;
