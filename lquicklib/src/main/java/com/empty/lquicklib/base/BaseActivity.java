@@ -7,7 +7,8 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import com.empty.lquicklib.mvvm.BaseViewModel;
+
+import com.empty.lquicklib.bus.Messenger;
 import com.empty.lquicklib.widget.LoadingDialog;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
@@ -157,6 +158,7 @@ public abstract class BaseActivity<V extends ViewDataBinding,VM extends BaseView
     protected void onDestroy() {
         super.onDestroy();
         //解除ViewModel生命周期感应
+        Messenger.getDefault().unregister(this);
         getLifecycle().removeObserver(viewModel);
         if (viewModel != null) {
             viewModel.removeRxBus();

@@ -1,8 +1,7 @@
-package com.empty.lquicklib.mvvm;
+package com.empty.lquicklib.base;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
-import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleObserver;
 import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.Observer;
@@ -10,7 +9,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 
 import com.empty.lquicklib.event.SingleLiveEvent;
-import com.empty.lquicklib.model.IModel;
 import com.trello.rxlifecycle2.LifecycleProvider;
 
 import java.util.HashMap;

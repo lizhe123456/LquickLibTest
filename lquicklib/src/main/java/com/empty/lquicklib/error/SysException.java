@@ -5,13 +5,12 @@ package com.empty.lquicklib.error;
  *
  */
 
-public class SysException extends Exception {
+public class SysException extends Throwable{
 
-    private String code;
 
-    public SysException(String message, Throwable cause, String code) {
-        super(message, cause);
-        this.code = code;
+
+    public SysException(String message) {
+
     }
 
 }

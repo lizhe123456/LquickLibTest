@@ -1,7 +1,6 @@
 package com.empty.lquicklibtest;
 
-import android.app.Application;
-
+import com.empty.lquicklib.base.BaseApplication;
 import com.empty.lquicklib.crash.CaocConfig;
 
 /**
@@ -9,7 +8,7 @@ import com.empty.lquicklib.crash.CaocConfig;
  *
  */
 
-public class App extends Application {
+public class App extends BaseApplication {
 
     @Override
     public void onCreate() {
